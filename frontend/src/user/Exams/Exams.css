@@ -1,0 +1,112 @@
+:root {
+      --exam-bg: #1e1e1e;
+      --exam-window-bg: #252526;
+      --exam-border-color: #444;
+      --text-primary: #d4d4d4;
+      --text-secondary: #a0a0a0;
+      --accent-green: #4caf50;
+      --font-family: 'Segoe UI', 'Roboto', sans-serif;
+    }
+
+    .exam-page-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+      background-color:  #162447;
+      color: var(--text-primary);
+      font-family: var(--font-family);
+    }
+
+    .exam-page-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .exam-page-header h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .exam-page-header p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      max-width: 600px;
+    }
+
+    /* --- Animation Placeholder --- */
+    .animation-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      background-color: var(--exam-window-bg);
+      border: 2px dashed var(--exam-border-color);
+      border-radius: 12px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s, border-color 0.3s;
+    }
+    
+    .animation-placeholder:hover {
+      background-color: #2d2d2e;
+      border-color: #555;
+    }
+
+    .placeholder-text {
+      font-size: 1.5rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .placeholder-comment {
+        font-family: monospace;
+        color: #888;
+        margin-top: 15px;
+        font-size: 0.9rem;
+    }
+
+    /* --- Login Prompt --- */
+    .login-prompt-exam {
+      text-align: center;
+      margin-top: 10px;
+      padding: 30px;
+      background-color: transparent;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 600px;
+    }
+    .login-prompt-exam h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    .login-prompt-exam p {
+      color: var(--text-secondary);
+      margin-bottom: 25px;
+    }
+    .login-btn-exam {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #2998e2;
+        color: var(--exam-bg);
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding: 14px 30px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+    .login-btn-exam:hover {
+      background-color: #fff;
+      transform: translateY(-2px);
+    }
